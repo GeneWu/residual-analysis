@@ -12,12 +12,12 @@ def cal_d(data, attribute_1, attribute_2):
 	# variance tab & adjusted residual table
 	rd = len(freq_tab)
 	cd = len(freq_tab[0])
-	var_table = np.zeros((rd, cd))
+	# var_table = np.zeros((rd, cd))
 	d_table = np.zeros((rd, cd))
 	for x in range(0, len(freq_tab)-1):
 		for y in range(0, len(freq_tab[x])-1):
 			var = (1-freq_tab[x,-1]/freq_tab[-1,-1])*(1-freq_tab[-1,y]/freq_tab[-1,-1])
-			var_table[x, y] = var
+			# var_table[x, y] = var
 			e = freq_tab[x, y]
 			o = df1.iloc[x, y]
 			d = ((o - e)/np.sqrt(e))/np.sqrt(var)
