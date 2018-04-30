@@ -7,5 +7,5 @@ Generate a random dataset and perform residual analysis
 
 ### How do I get set up? ###
 
-Python residual.py
+python residual.py
 
